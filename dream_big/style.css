@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family:'Poppins', sans-serif;
+    margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+    background:rgb(21, 21, 54);
+}
+.card{
+    position:absolute;
+    margin:auto;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    width:400px;
+    background:rgb(34, 34, 34);
+    height:600px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border-radius:35px;
+    box-shadow:1px 1px 50px rgba(0, 0, 0, 0.589) ;
+    overflow:hidden;
+}
+
+img.shoe{
+    position:absolute;
+    width:90%;
+    transform:rotate(6deg);
+    top:-15%;
+    right:6%;
+    transition-duration:.7s;
+}
+.cerc1{
+    position:absolute;
+    width:550px;
+    height:550px;
+    top:-27%;
+    right:-34%;
+    background:rgb(92, 92, 92);
+    border-radius:50%;
+    transition-duration:.7s;
+}
+.puma{
+    position:absolute;
+    top:70%;
+    color:rgba(104, 104, 104, 0.692);
+    font-size:90px;
+    font-weight:900;
+    letter-spacing:15px;
+    line-height:72px;
+    transition-duration:.7s;
+    transition-delay:.1s;
+}
+.puma p{text-align:center;}
+.title{
+    position:absolute;
+    color:whitesmoke;
+    font-weight:800;
+    top:75%;
+    font-size:32px;
+    opacity:0;
+    transition-duration:0.8s;
+
+}
+.sizes{
+    color:whitesmoke;
+    position:absolute;
+    width:80%;
+    font-size:20px;
+    top:85%;
+    z-index:100;
+    display:flex;
+    justify-content:space-around;
+    opacity:0;
+    transition-duration:1s;
+    font-weight:700;
+    transition-delay:.3s;
+}
+.sizes ul{
+    display:flex;
+}
+.sizes ul li{
+    list-style:none;
+    margin-right:15px;
+}
+.sizes ul li a{
+    text-decoration:none;
+    color:whitesmoke;
+}
+.cart{
+    position:absolute;
+    color:whitesmoke;
+    text-align:center;
+    background:rgb(68, 68, 68);
+    border-radius:10%;
+    padding:20px 30px;
+    bottom:2%;
+    opacity:0;
+    cursor:pointer;
+    transition-duration:.5s;
+    transition-delay:.8s;
+}
+.logos img.logojcole{
+    position:absolute;
+    width:80px;
+    height:80px;
+    top:42%;
+    left:-70%;
+    filter:invert(40%);
+    opacity:0;
+    transition-duration:1.3s;
+    transition-delay:1s;
+}
+.logos img.logopuma{
+    position:absolute;
+    width:95px;
+    height:60px;
+    top:3%;
+    left:35%;
+    opacity:0;
+    filter:invert(15%);
+    transition-duration:1.5s;
+    transition-delay:.1s;
+}
+.card:hover img.logojcole{
+    top:42%;
+    left:3%;
+    opacity:1;
+}
+.card:hover img.logopuma{
+    opacity:1;
+}
+.card:hover .cerc1{
+    top:-40%;
+    right:-40%;
+}
+.card:hover img.shoe{
+    top:-18%;
+    right:-7%;
+    transform:rotate(10deg);
+}
+.card:hover .puma{
+    top:100%;
+}
+.card:hover .title{
+    top:60%;
+    opacity:.7;
+}
+.card:hover .sizes{
+    top:72%;
+    opacity:1;
+}
+.card:hover .cart{
+    opacity:1;
+    bottom:5%;
+}
+@media (max-width: 410px) {
+    .card{
+        width:380px;
+    }
+}
