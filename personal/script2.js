@@ -4,6 +4,9 @@ if(window.innerHeight > window.innerWidth){
     alerta.style.display='block';
     alerta.style.zIndex=100;
 }
+if(window.innerHeight >650){
+    alert('You can navigate(scroll) by clicking & dragging!');
+}
 
 window.onmousedown = function(event) {
     event.preventDefault();
