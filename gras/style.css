@@ -1,0 +1,162 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    overflow: hidden;
+  }
+  
+  .grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    transition:200ms ease;
+  }
+  
+  .grid-item {
+    width: 30vw;
+    height: 75%;
+    opacity: 0.5;
+    position:relative;
+    transition: 200ms;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* &:hover {
+      opacity: 1;
+    } */
+  }
+  img{
+    height:100%;
+    object-fit:scale-down;
+    position:absolute;
+    transition:200ms;
+  }
+
+.gridtext p{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  font-size:8em;
+  color:whitesmoke;
+  display:none;
+  pointer-events: none
+}
+nav{
+  position:fixed;
+  top:-.7px;
+  left:-.7px;
+  width:calc(100% + 1.4px);
+  height:10vh;
+  border: solid whitesmoke .7px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  color:whitesmoke;
+  font-size:2em;
+}
+nav >p{
+  padding:0 3vw;
+}
+nav div{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  height:100%;
+}
+nav div p{
+  border-left:solid whitesmoke .7px;
+  height:100%;
+  padding:0 1vw;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  font-size:.75em;
+  cursor:pointer;
+
+}
+nav div p:nth-child(1){
+  padding-right:4vw;
+}
+nav div p:nth-child(2){
+  padding-left:4vw;
+}
+.journalex{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  filter:blur(1);
+  font-size:1.3em;
+  display:none;
+}
+.journalex .scroll{
+  width:20%;
+  height:100%;
+  position:absolute;
+  right:0;
+  background:black;
+}
+.journalex .scroll > p:first-of-type{
+  height:10vh;
+  color:gray;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  padding-left:3em;
+  cursor:pointer;
+}
+.journalex .scroll >p:nth-of-type(2){
+  color:whitesmoke;
+  padding:2em 3em;
+}
+.journalex .scroll hr{
+  color:gray;
+}
+.menuex{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+  font-size:4.5em;
+  display:none;
+}
+.menuex ul{
+  position:relative;
+  top:15vh;
+  padding-left:1em;
+  display: inline-block
+}
+li{
+  list-style: none;
+  transition:200ms;
+  color:whitesmoke;
+}
+li:hover{
+  color:grey;
+}
+.additional{
+  position:absolute;
+  bottom:0;
+  color:whitesmoke;
+  width:100%;
+  height:20vh;
+}
