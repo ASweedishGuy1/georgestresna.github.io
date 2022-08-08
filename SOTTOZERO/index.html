@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?v=1">
+    <title>SOTTOZERO Burgerie</title>
+    <meta name="description" content="Join Now to learn the basics or advance your existing skills."> 
+    <meta property="og:title" content="SoloLearn: Learn to Code">
+    <meta property="og:description" content="Join Now to learn the basics or advance your existing skills">
+    <!-- <meta property="og:image" content="logo.png">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="burgerMeniu" onclick="displayMeniu()"></div>
+        <div class="navButtons">
+            <button> <a href="meniu/index.html">Meniu</a></button>
+            <button> <a href="#ctct">Comanda acum</a></button>
+        </div>
+    </nav>
+    
+    <div class="contactBox"><a href="tel: 0700 000 000">Telefon: 07xx xxx xxx</a></div>
+    <div class="mobileBar">
+        <div>
+            <div class="mobileHome"><a href="#pp">Home</a></div>
+            <div class="mobileMeniu"><a href="meniu/index.html">Meniu</a></div>
+            <div class="mobileContact" onclick="SlideUpMobileContact()">
+                <p>Contact</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sideMeniu">
+        <div class="close" onclick="hideMeniu()"></div>
+        <div class="verticalLine"></div>
+        <ul>
+            <li><a href="#pp" onclick="hideMeniu()">Pagina Principala</a></li>
+            <li><a href="#dn" onclick="hideMeniu()">Despre Noi</a></li>
+            <li><a href="meniu/index.html" onclick="hideMeniu()">Meniu</a></li>
+            <li><a href="#pg" onclick="hideMeniu()">Galerie</a></li>
+            <li><a href="#ctct" onclick="hideMeniu()">Contact & Livrari</a></li>
+        </ul>
+    </div>
+
+    <div class="backgroundImage">
+        <img src="media/background.jpg" alt="">
+    </div>
+    <div class="homePage" id="pp">
+        <p id="title">SOTTOZERO</p>
+        
+        <div class="showout">
+            <h3>Cele mai cautate produse</h3>
+            <div class="showoutItems">
+                <div class="item">
+                    <div class="photo"></div>
+                    <p>Title</p>
+                </div>
+                <div class="item">
+                    <div class="photo"></div>
+                    <p>Title</p>
+                </div>
+                <div class="item">
+                    <div class="photo"></div>
+                    <p>Title</p>
+                </div>
+                <div class="item">
+                    <div class="photo"></div>
+                    <p>Title</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutUs" id="dn">
+            <div class="rippingcover">
+                <img class='bkg' src="media/ripped-background1.jpg" alt="">
+                <img id='third' src="media/ripped by freeject.net/ripped 3.png" alt="">
+            </div>
+            <img class='dec' src="media/Burger.png" alt="">
+            <header>
+                <p id="princ">Despre noi</p>
+                <p id="sec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolore pariatur asperiores blanditiis placeat omnis unde itaque officia minima? Accusantium quas ab nihil rerum, odit distinctio numquam ducimus ratione laborum. Harum nisi quos expedita autem illum veniam. Animi, quod consequatur!</p>
+            </header>
+
+            <div class="secondrip">
+                <img class='bkg2' src="media/ripped-background1.jpg" alt="">
+                <div class="linearUp"></div>
+
+                <div class="aboutUs2">
+                    <div class="meniuInfo">
+                        <p>
+                            <span>Mancarea</span>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis nisi perferendis nulla deleniti, optio vel aliquid vero perspiciatis exercitationem id alias, repellendus sed temporibus eaque, non omnis nostrum inventore facere.
+                        </p>
+                        <button> <a href="meniu/index.html">Meniu</a></button>
+                    </div>
+                    <div class="deliveryinfo">
+                        <p>
+                            <span>Localul</span>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident earum pariatur dolores totam, corrupti quae eligendi a ullam, necessitatibus deleniti harum? Vitae, modi. Tempora, sunt excepturi. Sed odio non distinctio!
+                        </p>
+                        <button> <a href="#ctct">Comanda acum</a></button>
+                    </div>
+                </div>
+
+                <div class="scrolling">
+                    <ul>
+                        <li><img src="media/Filiale PNG/Untitled-1.png" alt=""></li>
+                        <li><img src="media/Filiale PNG/Untitled-2.png" alt=""></li>
+                        <li><img src="media/Filiale PNG/Untitled-3.png" alt=""></li>
+                        <li><img src="media/Filiale PNG/Untitled-4.png" alt=""></li>
+                        <li><img src="media/Filiale PNG/Untitled-1.png" alt=""></li>
+                        <li><img src="media/Filiale PNG/Untitled-2.png" alt=""></li>
+                        <li><img src="media/Filiale PNG/Untitled-3.png" alt=""></li>
+                        <li><img src="media/Filiale PNG/Untitled-4.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="photoGalery" id="pg">
+            <div class="continueLinear">
+                <img src="media/export1.png" alt="">
+                <div class="linearDown"></div>
+                <p>Galeria SOTTOZERO</p>
+            </div>
+            <div class="main">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="galeryLine">
+                    <div class="item1"></div>
+                    <div class="item1"></div>
+                    <div class="item1"></div>
+                    <div class="item1"></div>
+                    <div class="item1" id="info" onclick="tofb()">
+                        <div class="centerText">
+                            <span></span>
+                            <p>Spre galeria Sottozero</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="delivery" id="ctct">
+            <img src="media/bkgor.jpg" alt="">
+            <img src="media/ripped by freeject.net/ripped 1.png" alt="">
+            <img id='mainimg' src="media/burger_farfurie.png" alt="">
+            <h1>Date de contact si livrari</h1>
+            <div class="para">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d700.0780647197538!2d28.01658426500564!3d45.4232064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6deea71ec7511%3A0xeeff33dae80f921f!2sStrada%20Oltului%2031%2C%20Gala%C8%9Bi%20800402!5e0!3m2!1sro!2sro!4v1659734514682!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="shortInfo">
+                    <div class="detail">
+                        <span id="bef1"></span>
+                        <p>
+                            Program: <br>
+                                Luni-Vineri: 8:00 - 18:00 <br>
+                                Sambata: 10:00 - 16:00 <br>
+                                Duminica: inchis
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <span id="bef2"></span>
+                        <p>07xx xxx xxx</p>
+                    </div>
+                    <div class="detail">
+                        <span id="bef3"></span>
+                        <p>Str. Oltului 30 <br>
+                            -langa Scoala de Soferi Aviatia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="deliveryTime">
+                <h2>Detalii livrare</h2>
+                <hr>
+                <p>
+                    Durata livrarii: aprox 20min. <br>
+                    Pret livrare (in localitate): X ron <br>
+                    Livrare gratis de la: X ron <br>
+                </p>
+
+            </div>
+        </div>
+        <div class="credits">
+            <div class="navigationLink">
+                <h1>Navigatie</h1>
+                <a href="#pp">Pagina Principala</a>
+                <a href="#dn">Despre Noi</a>
+                <a href="meniu/index.html">Meniu</a>
+                <a href="#pg">Galerie</a>
+                <a href="#ctct">Contact & Livrari</a>
+            </div>
+            <div class="contactLink">
+                <h1>Contact</h1>
+                <a href="tel: 0700 000 000">Telefon: 07xx xxx xxx</a>
+                <p>Email: exemplu@gmail.com</p>
+                <a href="https://www.facebook.com/BurgeriaSottozero/"><span></span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js?v=1"></script>
+
+
+</body>
+</html>
