@@ -143,7 +143,7 @@ nav button:nth-child(2){
 }
 .showout h3{
     font-family:"Russo One";
-    font-size:4vw;
+    font-size:clamp(20px, 4vw, 250px);
     font-weight:500;
 }
 .showoutItems{
@@ -151,7 +151,7 @@ nav button:nth-child(2){
     display:flex;
     align-items:center;
     justify-content:space-around;
-    padding-top:5rem;
+    padding-top:clamp(50px, 5vw, 5rem);
 }
 .item{
     background-color:grey;
@@ -162,8 +162,8 @@ nav button:nth-child(2){
     font-weight:600;
 }
 .item .photo{
-    width:17vw;
-    height:17vw;
+    width:clamp(100px, 17vw, 1000px);
+    height:clamp(100px, 17vw, 1000px);
     border-radius:20px;
     background-color:black;
 }
@@ -194,7 +194,7 @@ img.bkg{
     position:relative;
 
     width:100%;
-    height:clamp(400px ,80vw, 800px);
+    height:clamp(400px ,80vmax, 800px);
     /* top:clamp(-40px ,-16vw, -200px) */
 }
 .linearUp{
@@ -245,9 +245,9 @@ img.bkg2{
 
 .scrolling{
     position:absolute;
-    top:-8vw;
+    top:-15vw;
     width:100%;
-    height:16vw;
+    height:30vw;
     /* background-color:#3b3d7d59; */
     overflow-x:hidden;
     z-index:10;
@@ -262,8 +262,8 @@ img.bkg2{
     transform:translateY(-50%);
 }
 .scrolling ul img{
-    width:15vw;
-    height:15vw;
+    width:clamp(70px, 15vw, 1000px);
+    height:clamp(70px, 15vw, 1000px);
 }
 
 .aboutUs2{
@@ -292,10 +292,10 @@ img.bkg2{
 }
 .aboutUs2 span{
     font-family:"Russo One";
-    font-size:clamp(.7rem ,2vw, 2rem);
+    font-size:clamp(1rem ,2.3vmax, 1000px);
 }
 .aboutUs2 p{
-    font-size:clamp(.7rem ,1.7vw, 2rem);
+    font-size:clamp(.8rem ,2vmax, 1000px);
 }
 .aboutUs2 .meniuInfo span{
     color:#D73B3B;
@@ -323,7 +323,7 @@ img.bkg2{
     object-fit:fill;
 }
 .meniuInfo{
-    padding-bottom:2vw;
+    padding-bottom:5vmax;
 }
 .linearDown{
     width:100%;
@@ -492,7 +492,8 @@ img.bkg2{
     width:100%;
     background:black;
     position:Relative;
-    height:clamp(15rem ,100vw,45rem);
+    /* height:clamp(15rem ,100vw,45rem); */
+    height:clamp(1rem, 55vmax, 35rem);
     z-index:40;
     display:flex;
     justify-content:space-around;
@@ -501,12 +502,12 @@ img.bkg2{
     text-decoration:none;
     color:grey;
     padding-bottom:1vw;
-    font-size:1.6vw;
+    font-size:clamp(10px ,1.6vw, 1000px);
 }
 .credits p{
     color:grey;
     padding-bottom:1rem;
-    font-size:1.6vw;
+    font-size:clamp(10px ,1.6vw, 1000px);
 }
 .credits h1{
     font-size:3.5vw;
@@ -520,6 +521,11 @@ img.bkg2{
 .contactLink span::after{
     font:var(--fa-font-solid);
     content: "\f39e";
+}
+@media(max-width:850px){
+    .aboutUs2{
+        flex-direction:column;
+    }
 }
 @media(max-width:710px){
     .galeryLine{
@@ -537,6 +543,16 @@ img.bkg2{
     #info.item1{
         margin-left:25vw;
     }
+    .credits{
+        flex-direction:column;
+        padding-top:3rem;
+        justify-content:start;
+        align-items:center;
+    }
+    .credits div{
+        align-items:center;
+        padding-bottom:1rem;
+    }
     /*dde lucrat mai sus la galerie*/
 }
 
@@ -545,10 +561,10 @@ img.bkg2{
         display:none;
     }
     .backgroundImage{
-        height:35vh;
+        height:25vh;
     }
     .homePage{
-        top:35vh;
+        top:25vh;
     }
     .backgroundImage img{
         width:85vw;
