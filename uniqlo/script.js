@@ -1,6 +1,6 @@
 let puncte=document.querySelector('.loading').getElementsByTagName('div');
 let textspecific=document.querySelector('.content').getElementsByTagName('div');
-
+/*
 // basic 
 puncte[0].style.background='#ee171f';
 textspecific[0].style.display='block';
@@ -71,4 +71,26 @@ puncte[4].addEventListener('click', function(){
     textspecific[4].style.display='block';
     j=4;
 });
+*/
+// Function to reset and apply styles
+function updateStyles(index) {
+    for (let i = 0; i < puncte.length; i++) {
+        puncte[i].style.background = 'white'; // Reset all backgrounds
+        textspecific[i].style.display = 'none'; // Hide all texts
+    }
+    puncte[index].style.background = '#ee171f'; // Highlight selected
+    textspecific[index].style.display = 'block'; // Show corresponding text
+    j = index; // Update j for automatic change
+}
 
+// Automatically cycle through items
+let j = 0;
+let recurenta = setInterval(() => {
+    puncte[j].click(); // Simulate click to trigger event
+    j = (j + 1) % puncte.length; // Cycle through indices
+}, 3000);
+
+// Attach event listeners for all items
+for (let i = 0; i < puncte.length; i++) {
+    puncte[i].addEventListener('click', () => updateStyles(i));
+}
